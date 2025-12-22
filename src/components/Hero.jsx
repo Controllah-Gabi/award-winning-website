@@ -116,9 +116,10 @@ const Hero = () => {
                   onLoadedData={handleVideoLoad}
                 />
               </div>
+               {/* Dark tint */}
             </VideoPreview>
           </div>
-
+          <div className="pointer-events-none absolute inset-0 z-10 bg-black/40" />
           <video
             ref={nextVdRef}
             src={getVideoSrc(currentIndex)}
@@ -140,23 +141,24 @@ const Hero = () => {
           />
         </div>
 
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
-          G<b>A</b>MING
+        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75 md:!text-[4rem] !text-[3rem]">
+        Pre <b>A</b>cademy  <br />  Foundation <b>P</b>hase
         </h1>
 
-        <div className="absolute left-0 top-0 z-40 size-full">
+        <div className="absolute left-0 top-10 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
-            <h1 className="special-font hero-heading text-blue-100">
-              redefi<b>n</b>e
+            <h1 className="special-font hero-heading text-white md:!text-[4rem] !text-[3rem]">
+            Beyond <b>h</b>ighlights
+              
             </h1>
 
-            <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-              Enter the Metagame Layer <br /> Unleash the Play Economy
+            <p className="mb-5 max-w-64 font-robert-regular text-white mt-5">
+              Enter the phases <br /> Belonging to the next generation.
             </p>
 
             <Button
               id="watch-trailer"
-              title="Watch trailer"
+              title="Explore"
               leftIcon={<TiLocationArrow />}
               containerClass="bg-yellow-300 flex-center gap-1"
             />
@@ -164,8 +166,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
-        G<b>A</b>MING
+      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black md:!text-[4rem] !text-[3rem]">
+        Pre <b>A</b>cademy  <br />  Foundation <b>P</b>hase
       </h1>
     </div>
   );
