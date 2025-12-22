@@ -85,7 +85,7 @@ const NavBar = () => {
     >
       <header className="w-full">
         {/* Wrap nav + dropdown in a rounded container */}
-        <div className="rounded-2xl backdrop-blur-md">
+        <div className="rounded-2xl bg-black">
           <nav className="flex h-16 items-center justify-between p-4">
             {/* Logo and Product button */}
             <div className="flex items-center gap-7">

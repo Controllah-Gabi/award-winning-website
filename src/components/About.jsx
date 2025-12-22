@@ -34,8 +34,8 @@ const About = () => {
         </p>
 
         <AnimatedTitle
-          title="Disc<b>o</b>ver the world's <br /> largest shared <b>a</b>dventure"
-          containerClass="mt-5 !text-black text-center"
+          title="Disc<b>o</b>ver the future of <br /> Academy <b>F</b>ootball"
+          containerClass="mt-5 !text-black text-center md:!text-[3rem] !text-[2rem]"
         />
 
         <div className="about-subtext">
