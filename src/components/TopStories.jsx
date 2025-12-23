@@ -12,20 +12,20 @@ const topStories = [
     id: "story-1",
     category: "Pre-academy",
     title: "Manchester United Win the Christmas Cup",
-    author: "Gabi",
+    author: "Controllah Gabi",
     date: "22 Dec 2025",
     href: "/stories/pre-academy-grind",
-    imageSrc: "/img/charlieburnet.jpg",
+    imageSrc: "/img/pakistaniplayer.jpg",
     featured: true,
   },
   {
     id: "story-2",
-    category: "Analysis",
-    title: "Why ‘Decision Speed’ Is The Real Separator In Academy Football",
-    author: "The Phases",
-    date: "21 Dec 2025",
+    category: "Foundation Phase",
+    title: "Manchester City Lech Cup Winners",
+    author: "Controllah Gabi",
+    date: "12 Dec 2025",
     href: "/stories/decision-speed",
-    imageSrc: "/img/stories/story-2.jpg",
+    imageSrc: "/img/masonnews3.jpg",
   },
   {
     id: "story-3",
@@ -34,7 +34,7 @@ const topStories = [
     author: "The Phases",
     date: "20 Dec 2025",
     href: "/stories/u16-scholarship-explained",
-    imageSrc: "/img/stories/story-3.jpg",
+    imageSrc: "/img/charlieburnet.jpg",
   },
   {
     id: "story-4",
@@ -44,16 +44,7 @@ const topStories = [
     date: "19 Dec 2025",
     href: "/stories/scouts-first-5-minutes",
     imageSrc: "/img/stories/story-4.jpg",
-  },
-  {
-    id: "story-5",
-    category: "Training",
-    title: "The Weekly Microcycle: A Simple Framework For Better Development",
-    author: "The Phases",
-    date: "18 Dec 2025",
-    href: "/stories/weekly-microcycle",
-    imageSrc: "/img/stories/story-5.jpg",
-  },
+  }
 ];
 
 const FeaturedStory = ({ story }) => {
@@ -101,9 +92,9 @@ const StoryRow = ({ story }) => {
     <a
       data-item
       href={story.href}
-      className="group flex gap-4 rounded-2xl border border-white/10 bg-black/20 p-3 transition hover:bg-black/30"
+      className="group flex gap-4 rounded-2xl border border-white/10 p-3 transition"
     >
-      <div className="relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-xl">
+      <div className="relative h-[200px] w-[300px] flex-shrink-0 overflow-hidden rounded-xl">
         <img
           src={story.imageSrc}
           alt={story.title}
@@ -115,18 +106,18 @@ const StoryRow = ({ story }) => {
 
       <div className="min-w-0">
         <div className="flex items-center gap-2">
-          <span className="text-xs uppercase tracking-wider text-white/60">
+          <span className="text-xs uppercase tracking-wider text-black/60">
             {story.category}
           </span>
-          <span className="text-xs text-white/40">•</span>
-          <time className="text-xs text-white/50">{story.date}</time>
+          <span className="text-xs text-black/40">•</span>
+          <time className="text-xs text-black/50">{story.date}</time>
         </div>
 
-        <h4 className="mt-1 line-clamp-2 text-sm font-semibold leading-snug text-white">
+        <h4 className="mt-1 line-clamp-2 text-sm font-semibold leading-snug text-black">
           {story.title}
         </h4>
 
-        <p className="mt-1 text-xs text-white/60">By {story.author}</p>
+        <p className="mt-1 text-xs text-black/60">By {story.author}</p>
       </div>
     </a>
   );
@@ -194,7 +185,7 @@ const TopStories = () => {
     <section
       ref={sectionRef}
       id="top-stories"
-      className="relative mx-auto w-[88%] md:w-[95%] pb-10 pt-20 top-[100px]"
+      className="relative mx-auto w-[88%] md:w-[95%] pb-10 pt-20 top-[100px] h-[973px]"
     >
       {/* soft background wash */}
       <div className="pointer-events-none absolute inset-0 -z-10">
@@ -212,7 +203,7 @@ const TopStories = () => {
           ))}
 
           {/* optional: a small callout card */}
-          <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
+          <div className="rounded-2xl border border-white/10 bg-black p-4">
             <p className="text-sm text-white/70">
               Want weekly watchlists and development breakdowns?
             </p>
